@@ -1,3 +1,12 @@
 [submodule "/Users/yuweiba/.vim/bundle/vundle"]
 	path = /Users/yuweiba/.vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "jshint.vim"]
+	path = jshint.vim
+	url = ./bundle/jshint.vim
+[submodule "vim-flake8"]
+	path = vim-flake8
+	url = ./bundle/vim-flake8
+[submodule "vundle"]
+	path = vundle
+	url = ./bundle/vundle
