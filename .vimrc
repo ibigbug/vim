@@ -45,5 +45,8 @@ autocmd FileType python setlocal set et sta sw=4 sts=4
 autocmd FileType python setlocal foldmethod=indent
 let g:pyflakes_use_quikefix = 0
 
+"javascript
+autocmd FileType javascript setlocal smartindent ts=2 sw=2
+
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
