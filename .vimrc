@@ -44,7 +44,7 @@ set incsearch
 
 "filetype
 "python
-autocmd FileType python setlocal et sta sw=4 sts=4
+autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=79
 autocmd FileType python setlocal foldmethod=indent
 autocmd FileType python syn keyword pythonBuiltin self
 let python_highlight_all = 1
