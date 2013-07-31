@@ -11,10 +11,10 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'jshint.vim'
 
 "my bundle
 Bundle 'vim-flake8'
+Bundle 'vim-jshint2'
 "end my bundle
 
 filetype plugin indent on
@@ -47,6 +47,7 @@ let g:pyflakes_use_quikefix = 0
 
 "javascript
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
+autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
