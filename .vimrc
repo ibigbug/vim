@@ -34,15 +34,21 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
+set ic
 
 set modeline
 
 set background=dark
 
+set incsearch
+
+
 "filetype
 "python
 autocmd FileType python setlocal set et sta sw=4 sts=4
 autocmd FileType python setlocal foldmethod=indent
+autocmd FileType python setlocal syn keyword pythonBuiltin self
+let  python_highlight_all = 1
 let g:pyflakes_use_quikefix = 0
 
 "javascript
@@ -51,3 +57,8 @@ autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
+
+set t_Co=256
+set pablo
+set
+hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
