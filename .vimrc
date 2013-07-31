@@ -59,6 +59,5 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
 
 set t_Co=256
-set pablo
-set
+colorscheme pablo
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
