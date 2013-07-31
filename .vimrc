@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 "my bundle
 Bundle 'vim-flake8'
 Bundle 'vim-jshint2'
+Bundle 'nerdtree'
 "end my bundle
 
 filetype plugin indent on
@@ -55,8 +56,10 @@ let g:pyflakes_use_quikefix = 0
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 
+"global remap
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
+map <Tab> :NERDTreeToggle<CR>
 
 set t_Co=256
 colorscheme pablo
