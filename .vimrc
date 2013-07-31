@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 Bundle 'vim-flake8'
 Bundle 'vim-jshint2'
 Bundle 'nerdtree'
+Bundle 'vim-python-indent'
 "end my bundle
 
 syntax on
