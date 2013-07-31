@@ -18,8 +18,6 @@ Bundle 'vim-jshint2'
 Bundle 'nerdtree'
 "end my bundle
 
-filetype plugin indent on
-
 syntax on
 filetype indent plugin on
 set ruler
@@ -46,15 +44,16 @@ set incsearch
 
 "filetype
 "python
-autocmd FileType python setlocal set et sta sw=4 sts=4
+autocmd FileType python setlocal et sta sw=4 sts=4
 autocmd FileType python setlocal foldmethod=indent
-autocmd FileType python setlocal syn keyword pythonBuiltin self
-let  python_highlight_all = 1
+autocmd FileType python syn keyword pythonBuiltin self
+let python_highlight_all = 1
 let g:pyflakes_use_quikefix = 0
 
 "javascript
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
+au BufNewFile,BufRead *.json setf javascript
 
 "global remap
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
