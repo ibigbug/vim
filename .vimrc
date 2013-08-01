@@ -63,9 +63,6 @@ au BufNewFile,BufRead *.json setf javascript
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
 map <Tab> :NERDTreeToggle<CR>
-vmap y :w !pbcopy<CR><CR>
-nmap yy :.w !pbcopy<CR><CR>
-nmap p :r !pbpaste<CR><CR>
 
 set t_Co=256
 colorscheme pablo
@@ -73,4 +70,4 @@ hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
 
 
 " sftp
-source .vim_sftp_conf
+source ~/.vim/.vim_sftp_conf
