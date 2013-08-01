@@ -59,11 +59,15 @@ autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 au BufNewFile,BufRead *.json setf javascript
 
+"html
+autocmd FileType html setlocal foldmethod=indent
+
 "global remap
+let mapleader=','
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
-map <F3> za
+map <S-f> za
 map <Tab> :NERDTreeToggle<CR>
-nnoremap <C-U> <ESC>:call SftpUpload()<CR>
+nnoremap <leader>up <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
 colorscheme molokai
