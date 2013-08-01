@@ -63,6 +63,7 @@ au BufNewFile,BufRead *.json setf javascript
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
 map <Tab> :NERDTreeToggle<CR>
+nnoremap <C-U> <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
 colorscheme pablo
