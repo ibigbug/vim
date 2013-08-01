@@ -1,4 +1,6 @@
 "global
+set encoding=utf-8
+set fileencodings=ucs-bcm,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set directory=$HOME/.hide
 let g:netrw_home=$HOME . '/.hide'
 let g:netrw_list_hide='.*\.swp$,.*\.pyc,.*~'
@@ -60,6 +62,9 @@ au BufNewFile,BufRead *.json setf javascript
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <F3> za
 map <Tab> :NERDTreeToggle<CR>
+vmap y :w !pbcopy<CR><CR>
+nmap yy :.w !pbcopy<CR><CR>
+nmap p :r !pbpaste<CR><CR>
 
 set t_Co=256
 colorscheme pablo
