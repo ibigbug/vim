@@ -19,6 +19,7 @@ Bundle 'vim-flake8'
 Bundle 'vim-jshint2'
 Bundle 'nerdtree'
 Bundle 'vim-python-indent'
+Bundle 'vim-sftp'
 "end my bundle
 
 syntax on
@@ -69,3 +70,7 @@ nmap p :r !pbpaste<CR><CR>
 set t_Co=256
 colorscheme pablo
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
+
+
+" sftp
+source .vim_sftp_conf
