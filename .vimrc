@@ -20,6 +20,7 @@ Bundle 'vim-jshint2'
 Bundle 'nerdtree'
 Bundle 'vim-python-indent'
 Bundle 'vim-sftp'
+Bundle 'emmet'
 "end my bundle
 
 syntax on
@@ -39,7 +40,7 @@ set smarttab
 set expandtab
 set ic
 
-set modeline
+set modeline " enable infile config
 
 set background=dark
 
@@ -60,6 +61,7 @@ autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 au BufNewFile,BufRead *.json setf javascript
 
 "html
+au BufRead,BufNewFile *.html,*.shtml setf html
 autocmd FileType html setlocal foldmethod=indent
 
 "global remap
