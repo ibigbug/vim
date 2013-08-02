@@ -15,12 +15,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "my bundle
+Bundle 'nerdtree'
 Bundle 'vim-flake8'
 Bundle 'vim-jshint2'
-Bundle 'nerdtree'
 Bundle 'vim-python-indent'
 Bundle 'vim-sftp'
-Bundle 'emmet'
+Bundle 'vim-zencoding'
 "end my bundle
 
 syntax on

@@ -16,6 +16,6 @@
 [submodule "bundle/vim-sftp"]
 	path = bundle/vim-sftp
 	url = https://github.com/eshion/vim-sftp-sync
-[submodule "bundle/emmet"]
-	path = bundle/emmet
-	url = https://github.com/emmetio/emmet
+[submodule "bundle/vim-zencoding"]
+	path = bundle/vim-zencoding
+	url = https://github.com/mattn/zencoding-vim/
