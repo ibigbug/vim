@@ -22,6 +22,7 @@ Bundle 'vim-python-indent'
 Bundle 'vim-sftp'
 Bundle 'vim-zencoding'
 Bundle 'vim-javascript'
+Bundle 'vim-clojure-static'
 "end my bundle
 
 syntax on
