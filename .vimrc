@@ -65,6 +65,9 @@ au BufNewFile,BufRead *.json setf javascript
 "html
 au BufRead,BufNewFile *.html,*.shtml setf html
 autocmd FileType html setlocal foldmethod=indent
+let g:html_indent_incags = "html, body, head, tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
 
 "global remap
 let mapleader=','
