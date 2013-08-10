@@ -9,10 +9,20 @@ proxy = http://proxy.tencent.com:8080
 https_proxy = https://proxy.tencent.com:8080
 registry = http://registry.npmjs.org
 EOF
+
+_OLD_PS1=$PS1
+PS1="(proxy_env)$PS1"
+export PS1
 deactivate(){
     unset http_proxy
     unset https_proxy
     unset GIT_SSH
     cat /dev/null > $NPMRC
+
+    if [ -n "$_OLD_PS1" ]; then
+        PS1="$_OLD_PS1"
+        export PS1
+        unset _OLD_PS1
+    fi
     unset -f deactivate
 }
