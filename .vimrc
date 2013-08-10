@@ -23,6 +23,7 @@ Bundle 'vim-sftp'
 Bundle 'vim-zencoding'
 Bundle 'vim-javascript'
 Bundle 'vim-clojure-static'
+Bundle 'vim-jade'
 "end my bundle
 
 syntax on
