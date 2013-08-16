@@ -83,4 +83,4 @@ hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
 
 
 " sftp
-source ~/.vim/.vim_sftp_conf
+source ~/.vim/vim_sftp_conf

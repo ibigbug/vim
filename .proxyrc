@@ -17,7 +17,7 @@ deactivate(){
     unset http_proxy
     unset https_proxy
     unset GIT_SSH
-    cat /dev/null > $NPMRC
+    echo 'registry = http://registry.npmjs.org' > $NPMRC
 
     if [ -n "$_OLD_PS1" ]; then
         PS1="$_OLD_PS1"
