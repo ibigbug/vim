@@ -23,6 +23,7 @@ Bundle 'vim-sftp'
 Bundle 'vim-emmet'
 Bundle 'vim-javascript'
 Bundle 'vim-clojure-static'
+Bundle 'vim-html5'
 Bundle 'vim-jade'
 "end my bundle
 
