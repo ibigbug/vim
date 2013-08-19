@@ -25,6 +25,7 @@ Bundle 'vim-javascript'
 Bundle 'vim-clojure-static'
 Bundle 'vim-html5'
 Bundle 'vim-jade'
+Bundle 'vim-stylus'
 "end my bundle
 
 syntax on

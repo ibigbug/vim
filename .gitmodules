@@ -31,3 +31,6 @@
 [submodule "bundle/vim-html5"]
 	path = bundle/vim-html5
 	url = https://github.com/othree/html5.vim
+[submodule "bundle/vim-stylus"]
+	path = bundle/vim-stylus
+	url = https://github.com/vim-scripts/vim-stylus
