@@ -37,3 +37,6 @@
 [submodule "bundle/vim-cpp"]
 	path = bundle/vim-cpp
 	url = https://github.com/vim-jp/cpp-vim
+[submodule "vim-js-lib-syntax"]
+	path = vim-js-lib-syntax
+	url = https://github.com/othree/javascript-libraries-syntax.vim

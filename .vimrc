@@ -60,6 +60,7 @@ autocmd FileType python syn keyword pythonBuiltin self
 let python_highlight_all = 1
 let g:pyflakes_use_quikefix = 0
 
+
 "javascript
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
