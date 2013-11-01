@@ -27,6 +27,7 @@ Bundle 'vim-html5'
 Bundle 'vim-jade'
 Bundle 'vim-stylus'
 Bundle 'vim-cpp'
+Bundle 'vim-editorconfig'
 "end my bundle
 
 syntax on
@@ -65,6 +66,7 @@ let g:pyflakes_use_quikefix = 0
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 au BufNewFile,BufRead *.json setf javascript
+let jshint2_save = 1
 
 "html
 au BufRead,BufNewFile *.html,*.shtml setf html
