@@ -28,6 +28,7 @@ Bundle 'vim-jade'
 Bundle 'vim-stylus'
 Bundle 'vim-cpp'
 Bundle 'vim-editorconfig'
+Bundle 'vim-jinja'
 "end my bundle
 
 syntax on

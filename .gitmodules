@@ -40,3 +40,6 @@
 [submodule "bundle/vim-editorconfig"]
 	path = bundle/vim-editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "bundle/vim-jinja"]
+	path = bundle/vim-jinja
+	url = https://github.com/lepture/vim-jinja
