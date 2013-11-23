@@ -29,6 +29,7 @@ Bundle 'vim-stylus'
 Bundle 'vim-cpp'
 Bundle 'vim-editorconfig'
 Bundle 'vim-jinja'
+Bundle 'vim-cocoa'
 "end my bundle
 
 syntax on
@@ -70,8 +71,8 @@ au BufNewFile,BufRead *.json setf javascript
 let jshint2_save = 1
 
 "html
-au BufRead,BufNewFile *.html,*.shtml setf html
-autocmd FileType html setlocal foldmethod=indent
+au BufRead,BufNewFile *.html,*.shtml set ft=jinja
+autocmd FileType jinja setlocal foldmethod=indent
 let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
@@ -81,7 +82,7 @@ let mapleader=','
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 map <S-f> za
 map <Tab> :NERDTreeToggle<CR>
-nnoremap <leader>up <ESC>:call SftpUpload()<CR>
+"nnoremap <leader>up <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
 colorscheme molokai
