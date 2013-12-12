@@ -46,3 +46,6 @@
 [submodule "bundle/vim-cocoa"]
 	path = bundle/vim-cocoa
 	url = https://github.com/msanders/cocoa.vim
+[submodule "bundle/vim-mail"]
+	path = bundle/vim-mail
+	url = https://github.com/vim-scripts/mail.vim

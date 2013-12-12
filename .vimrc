@@ -30,6 +30,7 @@ Bundle 'vim-cpp'
 Bundle 'vim-editorconfig'
 Bundle 'vim-jinja'
 Bundle 'vim-cocoa'
+Bundle 'vim-mail'
 "end my bundle
 
 syntax on
@@ -76,6 +77,9 @@ autocmd FileType jinja setlocal foldmethod=indent
 let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+"mutt
+autocmd BufRead /tmp/mutt* setf mail
 
 "global remap
 let mapleader=','
