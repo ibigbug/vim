@@ -19,14 +19,12 @@ Bundle 'nerdtree'
 Bundle 'vim-flake8'
 Bundle 'vim-jshint2'
 Bundle 'vim-python-indent'
-Bundle 'vim-sftp'
 Bundle 'vim-emmet'
 Bundle 'vim-javascript'
 Bundle 'vim-clojure-static'
 Bundle 'vim-html5'
 Bundle 'vim-jade'
 Bundle 'vim-stylus'
-Bundle 'vim-cpp'
 Bundle 'vim-editorconfig'
 Bundle 'vim-jinja'
 Bundle 'vim-cocoa'
@@ -78,9 +76,6 @@ let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
-"mutt
-autocmd BufRead /tmp/mutt* setf mail
-
 "global remap
 let mapleader=','
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
@@ -91,7 +86,3 @@ map <Tab> :NERDTreeToggle<CR>
 set t_Co=256
 colorscheme molokai
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
-
-
-" sftp
-source ~/.vim/vim_sftp_conf
