@@ -77,6 +77,9 @@ let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+"markdown
+au BufRead,BufNewFile *.md set ft=markdown
+
 "global remap
 let mapleader=','
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
