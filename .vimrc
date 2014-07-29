@@ -70,7 +70,7 @@ au BufNewFile,BufRead *.json setf javascript
 "let jshint2_save = 1
 
 "html
-au BufRead,BufNewFile *.html,*.shtml set ft=jinja
+au BufRead,BufNewFile *.html,*.shtml set ft=jinja smartindent ts=2 sw=2
 autocmd FileType jinja setlocal foldmethod=indent
 let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
