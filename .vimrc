@@ -77,6 +77,9 @@ let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+"css
+autocmd FileType css setlocal foldmethod=indent ts=2 sw=2
+
 "markdown
 au BufRead,BufNewFile *.md set ft=markdown
 
