@@ -34,9 +34,6 @@
 [submodule "bundle/vim-stylus"]
 	path = bundle/vim-stylus
 	url = https://github.com/vim-scripts/vim-stylus
-[submodule "bundle/vim-cpp"]
-	path = bundle/vim-cpp
-	url = https://github.com/vim-jp/cpp-vim
 [submodule "bundle/vim-editorconfig"]
 	path = bundle/vim-editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim
@@ -49,9 +46,9 @@
 [submodule "bundle/vim-mail"]
 	path = bundle/vim-mail
 	url = https://github.com/vim-scripts/mail.vim
-[submodule "bundle/vim-velocity"]
-	path = bundle/vim-velocity
-	url = https://github.com/lepture/vim-velocity
 [submodule "bundle/vim-auto-pairs"]
 	path = bundle/vim-auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
+[submodule "bundle/vim-velocity"]
+	path = bundle/vim-velocity
+	url = https://github.com/lepture/vim-velocity.git
