@@ -52,3 +52,6 @@
 [submodule "bundle/vim-velocity"]
 	path = bundle/vim-velocity
 	url = https://github.com/lepture/vim-velocity
+[submodule "bundle/vim-auto-pairs"]
+	path = bundle/vim-auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
