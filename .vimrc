@@ -31,6 +31,7 @@ Bundle 'vim-jinja'
 Bundle 'vim-cocoa'
 Bundle 'vim-mail'
 Bundle 'vim-auto-pairs'
+Bundle 'vim-liquid'
 "end my bundle
 
 syntax on
