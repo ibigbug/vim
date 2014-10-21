@@ -12,26 +12,19 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 "my bundle
-Bundle 'nerdtree'
-Bundle 'vim-flake8'
-Bundle 'vim-jshint2'
-Bundle 'vim-python-indent'
-Bundle 'vim-emmet'
-Bundle 'vim-javascript'
-Bundle 'vim-clojure-static'
-Bundle 'vim-html5'
-Bundle 'vim-velocity'
-Bundle 'vim-jade'
-Bundle 'vim-stylus'
-Bundle 'vim-editorconfig'
-Bundle 'vim-jinja'
-Bundle 'vim-cocoa'
-Bundle 'vim-mail'
-Bundle 'vim-auto-pairs'
-"end my bundle
+Plugin 'scrooloose/nerdtree'
+Plugin 'nvie/vim-flake8'
+Plugin 'klen/python-mode'
+Plugin 'mattn/emmet-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/html5.vim'
+Plugin 'lepture/vim-velocity'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'jiangmiao/auto-pairs'
+"end my Plugin
 
 syntax on
 filetype indent plugin on
