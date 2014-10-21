@@ -21,9 +21,12 @@ Plugin 'klen/python-mode'
 Plugin 'mattn/emmet-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
+Plugin 'mitsuhiko/vim-jinja'
 Plugin 'lepture/vim-velocity'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'tpope/vim-liquid'
 "end my Plugin
 
 syntax on
@@ -53,7 +56,6 @@ set incsearch
 "python
 autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=79
 autocmd FileType python setlocal foldmethod=indent
-autocmd FileType python syn keyword pythonBuiltin self
 let python_highlight_all = 1
 let g:pyflakes_use_quikefix = 0
 
@@ -62,20 +64,17 @@ let g:pyflakes_use_quikefix = 0
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 au BufNewFile,BufRead *.json setf javascript
+let g:used_javascript_libs = 'angularjs'
 "let jshint2_save = 1
 
 "html
-au BufRead,BufNewFile *.html,*.shtml set ft=jinja smartindent ts=2 sw=2
-autocmd FileType jinja setlocal foldmethod=indent
+au BufNewFile,BufRead *.html set syntax=htmljinja
 let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 "css
 au BufRead,BufNewFile *.css setlocal foldmethod=indent ts=2 sw=2
-
-"markdown
-au BufRead,BufNewFile *.md set ft=markdown
 
 "global remap
 let mapleader=','
