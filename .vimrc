@@ -26,6 +26,7 @@ Plugin 'lepture/vim-velocity'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'Shutnik/jshint2.vim'
 Plugin 'tpope/vim-liquid'
 "end my Plugin
 
@@ -69,6 +70,7 @@ let g:used_javascript_libs = 'angularjs'
 
 "html
 au BufNewFile,BufRead *.html set syntax=htmljinja
+autocmd FileType html setlocal foldmethod=indent
 let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
