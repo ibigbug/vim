@@ -60,6 +60,7 @@ autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=79
 autocmd FileType python setlocal foldmethod=indent
 let python_highlight_all = 1
 let g:pyflakes_use_quikefix = 0
+let g:pymode_lint_on_write = 0
 
 
 "javascript
