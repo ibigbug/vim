@@ -17,7 +17,7 @@ Plugin 'gmarik/vundle'
 "my bundle
 Plugin 'scrooloose/nerdtree'
 Plugin 'nvie/vim-flake8'
-Plugin 'klen/python-mode'
+Plugin 'garbas/vim-snipmate'
 Plugin 'mattn/emmet-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
@@ -59,7 +59,6 @@ set incsearch
 autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=79
 autocmd FileType python setlocal foldmethod=indent
 let python_highlight_all = 1
-let g:pyflakes_use_quikefix = 0
 
 
 "javascript
