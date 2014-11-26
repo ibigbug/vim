@@ -17,6 +17,8 @@ Plugin 'gmarik/vundle'
 "my bundle
 Plugin 'scrooloose/nerdtree'
 Plugin 'nvie/vim-flake8'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
 Plugin 'garbas/vim-snipmate'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'mattn/emmet-vim'
