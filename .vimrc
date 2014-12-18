@@ -16,10 +16,11 @@ Plugin 'gmarik/vundle'
 
 "my bundle
 Plugin 'scrooloose/nerdtree'
-Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'groenewege/vim-less'
+Plugin 'wincent/command-t'
 Plugin 'nvie/vim-flake8'
 Plugin 'tomtom/tlib_vim'
+Plugin 'vim-scripts/lookupfile'
 Plugin 'honza/vim-snippets'
 Plugin 'garbas/vim-snipmate'
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -57,6 +58,7 @@ set modeline " enable infile config
 set background=dark
 
 set incsearch
+set hlsearch
 
 
 "filetype
