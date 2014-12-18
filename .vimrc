@@ -17,6 +17,7 @@ Plugin 'gmarik/vundle'
 "my bundle
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
+Plugin 'vim-scripts/genutils'
 Plugin 'wincent/command-t'
 Plugin 'nvie/vim-flake8'
 Plugin 'tomtom/tlib_vim'
