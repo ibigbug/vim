@@ -72,6 +72,7 @@ let g:pyflakes_use_quikefix = 0
 "javascript
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
+autocmd FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
 let g:used_javascript_libs = 'angularjs'
 "let jshint2_save = 1
