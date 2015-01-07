@@ -24,6 +24,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
 Plugin 'garbas/vim-snipmate'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'mattn/emmet-vim'
 Plugin 'pangloss/vim-javascript'
@@ -75,7 +76,7 @@ autocmd FileType javascript setlocal smartindent ts=2 sw=2
 autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 autocmd FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
-let g:used_javascript_libs = 'angularjs'
+let g:used_javascript_libs = ''
 "let jshint2_save = 1
 
 "html
@@ -97,5 +98,5 @@ map <Tab> :NERDTreeToggle<CR>
 "nnoremap <leader>up <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
-colorscheme molokai
+colorscheme inkpot
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
