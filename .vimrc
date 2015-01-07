@@ -18,6 +18,7 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/genutils'
+Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'wincent/command-t'
 Plugin 'nvie/vim-flake8'
 Plugin 'tomtom/tlib_vim'
@@ -86,6 +87,7 @@ let g:html_indent_style1 = "inc"
 
 "css
 au BufRead,BufNewFile *.css setlocal foldmethod=indent ts=2 sw=2
+au BufRead,BufNewFile *.css setlocal iskeyword+=-
 
 "global remap
 let mapleader=','
