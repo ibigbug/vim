@@ -101,5 +101,5 @@ map <Tab> :NERDTreeToggle<CR>
 "nnoremap <leader>up <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
-colorscheme grb256
+colorscheme desert
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
