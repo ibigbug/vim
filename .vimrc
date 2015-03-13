@@ -37,6 +37,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'tpope/vim-liquid'
+Plugin 'vim-coffee-script'
 "end my Plugin
 
 syntax on
