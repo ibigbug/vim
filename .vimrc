@@ -15,6 +15,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 "my bundle
+Plugin 'mxw/vim-jsx'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/genutils'
@@ -27,8 +28,9 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'mattn/emmet-vim'
-Plugin 'pangloss/vim-javascript'
+Plugin 'othree/yajs.vim'
 Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'lepture/vim-velocity'
 Plugin 'editorconfig/editorconfig-vim'
@@ -78,6 +80,7 @@ autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 autocmd FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
 let g:used_javascript_libs = ''
+let g:jsx_ext_required = 0
 "let jshint2_save = 1
 
 "html
@@ -99,5 +102,5 @@ map <Tab> :NERDTreeToggle<CR>
 "nnoremap <leader>up <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
-colorscheme grb256
+colorscheme desert
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
