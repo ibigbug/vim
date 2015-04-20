@@ -28,7 +28,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'mattn/emmet-vim'
-Plugin 'othree/yajs.vim'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mitsuhiko/vim-jinja'
@@ -40,6 +39,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'tpope/vim-liquid'
 Plugin 'vim-coffee-script'
+Plugin 'fatih/vim-go'
 "end my Plugin
 
 syntax on
