@@ -15,6 +15,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 "my bundle
+Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/genutils'
@@ -52,6 +53,7 @@ set foldlevel=99
 set ts=2
 set sts=2
 set sw=2
+set ls=2
 set autoindent
 set smarttab
 set expandtab
@@ -79,7 +81,6 @@ autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 autocmd FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
 let g:used_javascript_libs = ''
-let g:jsx_ext_required = 0
 "let jshint2_save = 1
 
 "html
