@@ -15,7 +15,6 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 "my bundle
-Plugin 'mxw/vim-jsx'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/genutils'
