@@ -16,6 +16,7 @@ Plugin 'gmarik/vundle'
 
 "my bundle
 Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/genutils'
