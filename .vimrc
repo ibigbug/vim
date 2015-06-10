@@ -105,3 +105,5 @@ map <Tab> :NERDTreeToggle<CR>
 set t_Co=256
 colorscheme desert
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
