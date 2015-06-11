@@ -16,6 +16,7 @@ Plugin 'gmarik/vundle'
 
 "my bundle
 Plugin 'bling/vim-airline'
+Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
@@ -41,6 +42,7 @@ Plugin 'Shutnik/jshint2.vim'
 Plugin 'tpope/vim-liquid'
 Plugin 'vim-coffee-script'
 Plugin 'fatih/vim-go'
+Plugin 'mxw/vim-jsx'
 "end my Plugin
 
 syntax on
@@ -67,6 +69,8 @@ set background=dark
 set incsearch
 set hlsearch
 
+"plugin setting
+let g:table_mode_corner = "|"
 
 "filetype
 "python
