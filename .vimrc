@@ -24,11 +24,9 @@ Plugin 'vim-scripts/genutils'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'wincent/command-t'
 Plugin 'nvie/vim-flake8'
-Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
-Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'mattn/emmet-vim'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
@@ -71,6 +69,9 @@ set hlsearch
 
 "plugin setting
 let g:table_mode_corner = "|"
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "filetype
 "python
