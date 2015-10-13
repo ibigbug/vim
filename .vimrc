@@ -41,6 +41,7 @@ Plugin 'tpope/vim-liquid'
 Plugin 'vim-coffee-script'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
 "end my Plugin
 
 syntax on
