@@ -114,6 +114,7 @@ colorscheme desert
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm-extra-conf.py"
 
 " funcs
 function WriteCreatingDirs()
