@@ -15,6 +15,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 "my bundle
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'Valloric/YouCompleteMe'
