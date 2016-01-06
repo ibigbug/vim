@@ -77,7 +77,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "filetype
 "python
-autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=79
+autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=120
 autocmd FileType python setlocal foldmethod=indent
 let python_highlight_all = 1
 let g:pyflakes_use_quikefix = 0
