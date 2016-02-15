@@ -82,6 +82,18 @@ autocmd FileType python setlocal foldmethod=indent
 let python_highlight_all = 1
 let g:pyflakes_use_quikefix = 0
 
+"golang
+"
+" use goimports for formatting
+let g:go_fmt_command = "goimports"
+
+let g:syntastic_go_checkers = ['errcheck']
+
+" Open go doc in vertical window, horizontal, or tab
+au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
+au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
+
 
 "javascript
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
