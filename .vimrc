@@ -43,6 +43,8 @@ Plugin 'vim-coffee-script'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'majutsushi/tagbar'
 "end my Plugin
 
 syntax on
@@ -61,6 +63,7 @@ set autoindent
 set smarttab
 set expandtab
 set ic
+set conceallevel=1
 
 set modeline " enable infile config
 
@@ -101,6 +104,16 @@ autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 autocmd FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
 let g:used_javascript_libs = ''
+let g:javascript_conceal_function       = "ƒ"
+let g:javascript_conceal_null           = "ø"
+let g:javascript_conceal_this           = "@"
+let g:javascript_conceal_return         = "⇚"
+let g:javascript_conceal_undefined      = "¿"
+let g:javascript_conceal_NaN            = "ℕ"
+let g:javascript_conceal_prototype      = "¶"
+let g:javascript_conceal_static         = "•"
+let g:javascript_conceal_super          = "Ω"
+let g:javascript_conceal_arrow_function = "⇒"
 "let jshint2_save = 1
 
 "html
