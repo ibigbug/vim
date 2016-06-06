@@ -63,7 +63,6 @@ set autoindent
 set smarttab
 set expandtab
 set ic
-set conceallevel=1
 
 set modeline " enable infile config
 
@@ -135,7 +134,7 @@ map <Tab> :NERDTreeToggle<CR>
 "nnoremap <leader>up <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
-colorscheme desert
+colorscheme jellyx
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
