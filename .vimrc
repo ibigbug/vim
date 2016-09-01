@@ -24,7 +24,6 @@ Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/genutils'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'wincent/command-t'
-Plugin 'nvie/vim-flake8'
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
 Plugin 'flazz/vim-colorschemes'
@@ -37,7 +36,6 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Raimondi/delimitMate'
 Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'Shutnik/jshint2.vim'
 Plugin 'tpope/vim-liquid'
 Plugin 'vim-coffee-script'
 Plugin 'fatih/vim-go'
@@ -45,6 +43,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/syntastic'
 "end my Plugin
 
 syntax on
@@ -82,14 +81,11 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=120
 autocmd FileType python setlocal foldmethod=indent
 let python_highlight_all = 1
-let g:pyflakes_use_quikefix = 0
 
 "golang
 "
 " use goimports for formatting
 let g:go_fmt_command = "goimports"
-
-let g:syntastic_go_checkers = ['errcheck']
 
 " Open go doc in vertical window, horizontal, or tab
 au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
@@ -99,7 +95,6 @@ au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
 
 "javascript
 autocmd FileType javascript setlocal smartindent ts=2 sw=2
-autocmd FileType javascript noremap <buffer> <F8> :JSHint<CR>
 autocmd FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
 let g:used_javascript_libs = ''
@@ -113,7 +108,6 @@ let g:javascript_conceal_prototype      = "¶"
 let g:javascript_conceal_static         = "•"
 let g:javascript_conceal_super          = "Ω"
 let g:javascript_conceal_arrow_function = "⇒"
-"let jshint2_save = 1
 
 "html
 au BufNewFile,BufRead *.html set syntax=htmljinja
@@ -126,9 +120,31 @@ let g:html_indent_style1 = "inc"
 au BufRead,BufNewFile *.css setlocal foldmethod=indent ts=2 sw=2
 au BufRead,BufNewFile *.css setlocal iskeyword+=-
 
+"syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+let g:syntastic_go_checkers = ['errcheck']
+let g:syntastic_python_checkers = ['flake8']
+
+
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
+
 "global remap
 let mapleader=','
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+nnoremap <F7> :SyntasticCheck<CR>
 map <S-f> za
 map <Tab> :NERDTreeToggle<CR>
 "nnoremap <leader>up <ESC>:call SftpUpload()<CR>
