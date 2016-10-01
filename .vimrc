@@ -78,8 +78,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "filetype
 "python
-autocmd FileType python setlocal et sta sw=4 sts=4 textwidth=120
-autocmd FileType python setlocal foldmethod=indent
+au FileType python setlocal et sta sw=4 sts=4 textwidth=120
+au FileType python setlocal foldmethod=indent
 let python_highlight_all = 1
 
 "golang
@@ -94,8 +94,8 @@ au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
 
 
 "javascript
-autocmd FileType javascript setlocal smartindent ts=2 sw=2
-autocmd FileType javascript set foldmethod=indent
+au FileType javascript setlocal smartindent ts=2 sw=2
+au FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
 let g:used_javascript_libs = ''
 let g:javascript_conceal_function       = "ƒ"
@@ -111,7 +111,7 @@ let g:javascript_conceal_arrow_function = "⇒"
 
 "html
 au BufNewFile,BufRead *.html set syntax=htmljinja
-autocmd FileType html setlocal foldmethod=indent
+au FileType html setlocal foldmethod=indent
 let g:html_indent_incags = "html, body, head, tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
