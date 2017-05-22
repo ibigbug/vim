@@ -2,7 +2,6 @@
 set encoding=utf-8
 set fileencodings=ucs-bcm,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set directory=$HOME/.hide
-set clipboard=unnamed
 let g:netrw_home=$HOME . '/.hide'
 let g:netrw_list_hide='.*\.swp$,.*\.pyc,.*~,*.o,.DS_Store'
 
