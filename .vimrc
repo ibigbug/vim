@@ -9,10 +9,10 @@ let g:netrw_list_hide='.*\.swp$,.*\.pyc,.*~,*.o,.DS_Store'
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 "my bundle
 Plugin 'terryma/vim-multiple-cursors'
@@ -45,9 +45,10 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 "end my Plugin
+call vundle#end()
+filetype indent plugin on
 
 syntax on
-filetype indent plugin on
 set ruler
 set showcmd
 set cursorline
