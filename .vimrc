@@ -87,6 +87,7 @@ let python_highlight_all = 1
 "
 " use goimports for formatting
 let g:go_fmt_command = "goimports"
+let g:go_gocode_unimported_packages = 1
 
 " Open go doc in vertical window, horizontal, or tab
 au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
