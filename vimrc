@@ -15,8 +15,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 "my bundle
+Plugin 'tell-k/vim-autopep8'
 Plugin 'tpope/vim-fugitive'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'Valloric/YouCompleteMe'
@@ -24,16 +24,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/genutils'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'wincent/command-t'
-Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mattn/emmet-vim'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'lepture/vim-velocity'
-Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Raimondi/delimitMate'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -82,7 +78,11 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 "python
 au FileType python setlocal et sta sw=4 sts=4 textwidth=120
 au FileType python setlocal foldmethod=indent
+au FileType python
+  \ au BufWritePre <buffer> call Autopep8()
+let g:autopep8_disable_show_diff=1
 let python_highlight_all = 1
+let g:autopep8_max_line_length=79
 
 "golang
 "
@@ -90,27 +90,11 @@ let python_highlight_all = 1
 let g:go_fmt_command = "goimports"
 let g:go_gocode_unimported_packages = 1
 
-" Open go doc in vertical window, horizontal, or tab
-au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
-au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
-au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
-
-
 "javascript
 au FileType javascript setlocal smartindent ts=2 sw=2
 au FileType javascript set foldmethod=indent
 au BufNewFile,BufRead *.json setf javascript
 let g:used_javascript_libs = ''
-let g:javascript_conceal_function       = "ƒ"
-let g:javascript_conceal_null           = "ø"
-let g:javascript_conceal_this           = "@"
-let g:javascript_conceal_return         = "⇚"
-let g:javascript_conceal_undefined      = "¿"
-let g:javascript_conceal_NaN            = "ℕ"
-let g:javascript_conceal_prototype      = "¶"
-let g:javascript_conceal_static         = "•"
-let g:javascript_conceal_super          = "Ω"
-let g:javascript_conceal_arrow_function = "⇒"
 
 "html
 au BufNewFile,BufRead *.html set syntax=htmljinja
