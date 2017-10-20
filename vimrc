@@ -78,8 +78,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 "python
 au FileType python setlocal et sta sw=4 sts=4 textwidth=120
 au FileType python setlocal foldmethod=indent
-au FileType python
-  \ au BufWritePre <buffer> call Autopep8()
+au FileType python au BufWritePre <buffer> call Autopep8()
 let g:autopep8_disable_show_diff=1
 let python_highlight_all = 1
 let g:autopep8_max_line_length=79
