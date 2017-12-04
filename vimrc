@@ -38,7 +38,6 @@ Plugin 'vim-coffee-script'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 "end my Plugin
@@ -114,7 +113,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height = 5
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
@@ -141,10 +140,5 @@ hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm-extra-conf.py"
-
-" funcs
-function WriteCreatingDirs()
-    execute ':silent !mkdir -p %:h'
-    write
-endfunction
-command W call WriteCreatingDirs()
+let g:ycm_disable_for_files_larger_than_kb = 1000
+let g:ycm_python_binary_path = 'python'
