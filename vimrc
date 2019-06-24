@@ -126,6 +126,8 @@ highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
 
+autocmd filetype crontab setlocal nobackup nowritebackup
+
 "global remap
 let mapleader=','
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
