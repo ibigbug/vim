@@ -137,6 +137,8 @@ map <Tab> :NERDTreeToggle<CR>
 "nnoremap <leader>up <ESC>:call SftpUpload()<CR>
 
 set t_Co=256
+set termguicolors 
+set guicursor=
 colorscheme jellyx
 hi Pmenu guifg=#c0c0c0 guibg=#294d4a ctermfg=gray ctermbg=black
 set completeopt-=preview
