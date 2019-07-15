@@ -1,0 +1,1 @@
+/Users/yuweiba/.config/nvim/vimrc
