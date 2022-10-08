@@ -145,4 +145,3 @@ set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm-extra-conf.py"
 let g:ycm_disable_for_files_larger_than_kb = 1000
-let g:ycm_python_binary_path = 'python'
