@@ -5,44 +5,43 @@ set directory=$HOME/.hide
 let g:netrw_home=$HOME . '/.hide'
 let g:netrw_list_hide='.*\.swp$,.*\.pyc,.*~,*.o,.DS_Store'
 
-"vundle
-set nocompatible
-filetype off
+"vim-plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $HOME . '.vimrc'
+endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/bundle')
 
 "my bundle
-Plugin 'tell-k/vim-autopep8'
-Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/nerdtree'
-Plugin 'groenewege/vim-less'
-Plugin 'vim-scripts/genutils'
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'mattn/emmet-vim'
-Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mitsuhiko/vim-jinja'
-Plugin 'lepture/vim-velocity'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Raimondi/delimitMate'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'tpope/vim-liquid'
-Plugin 'vim-coffee-script'
-Plugin 'fatih/vim-go'
-Plugin 'mxw/vim-jsx'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/syntastic'
+Plug 'tell-k/vim-autopep8'
+Plug 'tpope/vim-fugitive'
+Plug 'bling/vim-airline'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'scrooloose/nerdtree'
+Plug 'groenewege/vim-less'
+Plug 'vim-scripts/genutils'
+Plug 'hynek/vim-python-pep8-indent'
+Plug 'flazz/vim-colorschemes'
+Plug 'mattn/emmet-vim'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mitsuhiko/vim-jinja'
+Plug 'lepture/vim-velocity'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Raimondi/delimitMate'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'tpope/vim-liquid'
+Plug 'kchmck/vim-coffee-script'
+Plug 'fatih/vim-go'
+Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/syntastic'
 "end my Plugin
-call vundle#end()
-filetype indent plugin on
+call plug#end()
 
 syntax on
 set ruler
